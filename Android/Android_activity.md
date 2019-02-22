@@ -1,0 +1,13 @@
+# 안드로이드 시스템구성
+안드로이드에 대해서 대충 알고있지만 그동안 알고 있는것에 대해서 정리하는 과정으로
+Udacity 강의를 통해서 다시 정리중이다.
+
+강의 링크
+https://classroom.udacity.com/courses/ud851
+
+레슨 1부터 차근차근 보는중
+
+## Activity
+안드로이드는 각 컴포넌트들이 합쳐져서 앱으로 구성된다. 컴포넌트의 종류는 Activity, Service, Broadcast receiver, Content provider로 구성된다. 
+이중에서 액티비티는 사용자의 화면에 뷰를 보여주고 사용자와 인터액션 하는 컴포넌트이다. 액티비티는 화면을 보여주고 화면에서 들어오는 사용자 입력을 받아서 다시 데이터와 가공 한 후 화면에 결과물을 보여준다. 액티비티의 화면은 layout xml 파일을 통해서 화면의 뷰를 구성하고, Activity onCreate()시 SetContentview(Layout.id)를 통해서 화면에 그려준다.
+layout xml에는 화면을 구성하는 뷰컴포넌트(Button, EditText, TextView 등)들이 있고 이 뷰 컴포넌트들의 그룹을 한대 모아서 올려주는 컨테이너 뷰가 있다. 이 컨테이너 뷰는 ViewGroup를 상속받는데 ViewGroup 또한 View를 상속받는다 컨테이너 뷰의 종류는Releative layout, Linear Layout, FrameLayout 등이고 이 컨테이너 위에 각 뷰 컴포넌트들을 위치시킨다.
