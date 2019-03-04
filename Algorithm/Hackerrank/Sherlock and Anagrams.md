@@ -53,7 +53,9 @@ public class Solution {
 
 c++ 작성 코드
 <pre><code>
+using namespace std;
 
+// Complete the sherlockAndAnagrams function below.
 int sherlockAndAnagrams(string s) {
     vector<int> resultList;
     map<string, int> resultMap;
@@ -74,12 +76,16 @@ int sherlockAndAnagrams(string s) {
     }
 
     return resultCount;
-    
-</pre></code>
+
+}
+</code></pre>
 
 ## map 사용방식에 대해 java와 c++이 약간의 차이가 있다.
 c++에 값을 insert  하거나 value 값을 업데이트 할때 resultMap[subS]++;로 사용가능.
 java는 wordMap.containsKey(subStr) 리턴값으로 true/false를 구분하여 true면 wordMap.put(subStr, wordMap.get(subStr) + 1);
 false면 wordMap.put(subStr, 1);
+
+## java의 String.subString과 c++ string.substr 사용법도 다르다.
+c++은 substr(start, count) 개념이면 java 는 (start, end) 개념이다.
 
 
