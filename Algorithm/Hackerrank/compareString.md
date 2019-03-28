@@ -12,6 +12,7 @@ string b = "string if (a.compare(b) == 0)
 출처: https://makerj.tistory.com/127 [CheatSheet]
 
 ## JAVA
+s1.compareTo(s2)
 if s1 > s2, it returns positive number  
 if s1 < s2, it returns negative number  
 if s1 == s2, it returns 0  
